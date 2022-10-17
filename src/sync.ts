@@ -98,7 +98,7 @@ async function updateRemoteContent(
     url: `/templates/${template.id}/versions`,
     data: {
       template_id: template.id,
-      active: true,
+      active: 1,
       name: getFormattedDate(new Date()),
       html_content: content,
       subject: template.subject ?? '',
